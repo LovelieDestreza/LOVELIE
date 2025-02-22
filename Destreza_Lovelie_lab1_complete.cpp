@@ -146,7 +146,7 @@ string deleteFromGivenElement(int element){
 
 int binarySearch(int num, int lowest, int highest){
     while(lowest <= highest){
-        int middle = lowest + ((highest - lowest) /2);
+        int middle = lowest + (highest - lowest) /2;
 
         if(myArray[middle] ==num){
             lowest = middle + 1;
@@ -199,7 +199,7 @@ int main(){
 
     traverseArray();
 
-    cout << binarySearch (30, 3, 256);
+    cout << binarySearch (30, 3, numElem);
 
     return 0;
 }
